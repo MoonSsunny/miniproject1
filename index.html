@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기만들기</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/index.js"></script>
+</head>
+<body>
+    <div class="calc">
+        <table >
+            <tbody>
+                <tr>
+                    <td colspan="4" class="text" ></td>
+                </tr>
+                <tr>
+                    <td onclick="add(1)">1</td>
+                    <td onclick="add(2)">2</td>
+                    <td onclick="add(3)">3</td>
+                    <td onclick="add('+')">+</td>
+                </tr>
+                <tr>
+                    <td onclick="add(4)">4</td>
+                    <td onclick="add(5)">5</td>
+                    <td onclick="add(6)">6</td>
+                    <td onclick="add('-')">-</td>
+        
+                </tr>
+                <tr>
+                    <td onclick="add(7)">7</td>
+                    <td onclick="add(8)">8</td>
+                    <td onclick="add(9)">9</td>
+                    <td onclick="add('*')">X</td>
+        
+                </tr>
+                <tr>
+                    <td class="c" onclick="reset()">c</td>
+                    <td onclick="add(0)">0</td>
+                    <td onclick="calcResult()">=</td>
+                    <td onclick="add('/')">/</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
